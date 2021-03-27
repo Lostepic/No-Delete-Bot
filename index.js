@@ -22,4 +22,8 @@ client.on("message", msg => {
     }
 })
 
+if(!process.env.BOT_TOKEN) {
+    throw "You are missing BOT_TOKEN in your .env file, update this and try again.";
+}
+
 client.login(process.env.BOT_TOKEN);
