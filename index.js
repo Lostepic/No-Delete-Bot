@@ -5,8 +5,8 @@ const client = new Discord.Client({
     partials: ['MESSAGE ']
 });
 
-client.on("ready", () => {
-    console.log("Bot is online & ready")
+    client.on("ready", () => {
+        console.log("Bot is online & ready")
     })
 
     client.on("messageDelete", msg => {
